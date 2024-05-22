@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='Asset 1@2x.png') }}" alt="logo" class="logo">
+        <h2> Connect to the world around you</h2>
+        <form action="/login" method="post">
+            <input type="text" name="email" placeholder="email address/number" required>
+            <input type="password" name="password" placeholder="password..." required>
+            <button type="submit" class="login-btn"> Login in</button>
+            <a href="">Reset Password?</a>
+            <button type="button" class="create-btn">Create new account</button>
+        </form>
+        <p> Craete a Page for you or someone you know </p>
+
+    </div>
+    
+</body>
+</html>
